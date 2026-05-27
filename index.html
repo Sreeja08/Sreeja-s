@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VeroWear Fashion Store</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #000;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      background: white;
+      color: black;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 36px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      background: white;
+    }
+
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .faq {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>VeroWear Fashion Store</h1>
+    <p>
+      Premium streetwear and casual fashion for modern lifestyle lovers.
+      Explore hoodies, jackets, t-shirts, and more.
+    </p>
+    <a href="#products" class="btn">Shop Now</a>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>About Us</h2>
+      <p style="text-align:center; max-width:800px; margin:auto; font-size:18px;">
+        VeroWear is a modern clothing brand focused on stylish, comfortable,
+        and affordable fashion. We deliver premium fashion products across India.
+      </p>
+    </div>
+  </section>
+
+  <section id="products" style="background:#f5f5f5;">
+    <div class="container">
+      <h2>Featured Products</h2>
+
+      <div class="products">
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200&auto=format&fit=crop" alt="Hoodie">
+          <div class="card-content">
+            <h3>Classic Oversized Hoodie</h3>
+            <p>Premium cotton oversized hoodie designed for everyday comfort.</p>
+            <div class="price">₹1,999</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop" alt="Jacket">
+          <div class="card-content">
+            <h3>Urban Streetwear Jacket</h3>
+            <p>Lightweight streetwear jacket with modern minimal styling.</p>
+            <div class="price">₹2,499</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?q=80&w=1200&auto=format&fit=crop" alt="Tshirt">
+          <div class="card-content">
+            <h3>Essential Relaxed T-Shirt</h3>
+            <p>Soft breathable cotton t-shirt for daily casual wear.</p>
+            <div class="price">₹799</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>FAQs</h2>
+
+      <div class="faq">
+        <h3>What is your return policy?</h3>
+        <p>Customers can return products within 15 days of delivery.</p>
+      </div>
+
+      <div class="faq">
+        <h3>How long does shipping take?</h3>
+        <p>Orders are usually delivered within 3-5 business days.</p>
+      </div>
+
+      <div class="faq">
+        <h3>Do you offer cash on delivery?</h3>
+        <p>Yes, cash on delivery is available across India.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h2>Contact Us</h2>
+    <p>Email: support@verowear.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Hyderabad, India</p>
+  </footer>
+
+  <script>
+    console.log("VeroWear Website Loaded Successfully");
+  </script>
+
+</body>
+</html>
